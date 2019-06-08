@@ -1,5 +1,7 @@
 import tkinter
+import calendar
 from tkinter import filedialog
+from tkinter import messagebox
 
 mywind = tkinter.Tk()
 mywind.geometry("500x300")
@@ -37,43 +39,66 @@ def f14_exit():
 
 #2:#/f21_font/f22_color/f23_style/f24_convention
 def	f21_font():
-	print("font")
+	print("f21_font")
 
 def f22_color():
-	print("color")
+	print("f22_color")
 
 def f23_style():
-	print("style")
+	print("f23_style")
 
 def f24_convention():
-	print("convention")
+	print("f24_convention")
 
 #3:#/f31_conserial/f32_contcpip/
 def f31_conserial():
-	print("")
+	print("f31_conserial")
 def f32_contcpip():
-	print("")
+	print("f32_contcpip")
 
 
 #4:#/f41_original/f42_project/f43_version/f44_donation/
 def f41_original():
-	print("")
+	print("f41_original")
+	messagebox.showinfo("Original Infomation From",detail="""
+		pygame : pyton pip python	
+		openCV whit python : pyton pip opencv
+		★★DHKim★★DHKim★★DHKim★★
+		MDS Academy Pannnnnnggggggyo
+
+		""")
+
 def f42_project():
-	print("")
+	print("f42_project")
+	messagebox.showinfo("Project Info",detail="MDS Academy W4 Python Project")
+
 def f43_version():
-	print("")
+	print("f43_version")
+	messagebox.showinfo("Version Info",detail="PyTerm 0.1.190608")
+
 def f44_donation():
-	print("")
+	print("f44_donation")
+	messagebox.showinfo("Donation Info",detail="no thanks")
+	#messagebox.showerror("")
 
 #5:#/f51_pyshoot/f52_pyTalk/f53_superpi/f54_pycalc/
 def f51_pyshoot():
-	print("")
+	print("f51_pyshoot")
 def f52_pyTalk():
-	print("")
+	print("f52_pyTalk")
 def f53_superpi():
-	print("")
+	print("f53_superpi")
 def f54_pycalc():
-	print("")
+	print("f54_pycalc")
+	calroot = tkinter.Tk()
+	#calframe = tkinter.Frame(calroot)
+	text = tkinter.Text(calroot,width = 80, height = 50)
+	text.pack()
+	text.insert("1.0",calendar.calendar(2019))
+	#text = tkinter.Text(calroot,title="calendar2019",detail = calendar.calendar(2019))
+	#calframe.pack()
+	calroot.mainloop()
+
 
 
 
@@ -155,7 +180,7 @@ menu_help.add_command(label = "Donation", command = f44_donation)
 menu_amusement.add_command(label = "Python game", command = f51_pyshoot)
 menu_amusement.add_command(label = "Python Talk", command = f52_pyTalk)
 menu_amusement.add_command(label = "Super PI", command = f53_superpi)
-menu_amusement.add_command(label = "Python Calc", command = f54_pycalc)
+menu_amusement.add_command(label = "Python Calender", command = f54_pycalc)
 #/f51_pyshoot/f52_pyTalk/f53_superpi/f54_pycalc/
 
 
